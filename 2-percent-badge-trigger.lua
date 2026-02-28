@@ -1,5 +1,5 @@
---[[ Patch to add progress percentage badges in top right corner of cover ]]
---
+--[[ Patch to add progress percentage badges in top left corner of cover ]]
+-- modified not to trigger generation of badge until book has been read over 2%
 
 -- stylua: ignore start
 --========================== [[Edit your preferences here]] ================================
@@ -39,7 +39,7 @@ local function patchCoverBrowserProgressPercent(plugin)
         orig_MosaicMenuItem_paint(self, bb, x, y)
 
         -- Do not add badge for directories or completed items or items without percent_finished
-        if self.is_directory or self.status == "complete" or not self.percent_finished or (self.percent_finished * 100 < 6) then
+        if self.is_directory or self.status == "complete" or not self.percent_finished or (self.percent_finished * 100 < 2) then
             return
         end
 

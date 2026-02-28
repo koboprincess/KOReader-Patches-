@@ -5,7 +5,9 @@ _Verified to work with KOReader v2025.10 and Project: Title_
 
 _*must also use [2--disable-all-PT-widgets.lua](https://github.com/SeriousHornet/KOReader.patches/blob/main/2--disable-all-PT-widgets.lua) by SeriousHornet in order for most of these to work_
 
-**[2-pages-badge-sdr.lua](https://github.com/koboprincess/KOReader-Patches-/blob/main/2-progress-bar-trigger.lua)**
+**[2-pages-badge-sdr.lua](https://github.com/koboprincess/KOReader-Patches-/blob/main/2-progress-bar-trigger.lua)** 
+
+<img width="359" height="519" alt="image" src="https://github.com/user-attachments/assets/7d2201d6-87d6-4ea4-912b-d71314a01b35" />
 
 Patch uses sdr file from book metadata to generate a page count and display it on the bottom left cover of books in file manager
 
@@ -31,6 +33,8 @@ The trigger % can be changed by the user if desired in line 42 of the lua file:
 
 > _example: changing the '2' to a '4' would trigger it at 4%_
 
+<img width="346" height="523" alt="image" src="https://github.com/user-attachments/assets/07d8d343-2483-4595-be2e-de41e9091172" />
+
 **[2-progress-bar-trigger.lua](https://github.com/koboprincess/KOReader-Patches-/blob/main/2-progress-bar-trigger.lua)** 
 
 Modification of SeriousHornet's 2-new-progress-bar.lua to include a trigger that only allows the progress bar to appear on the book cover when it has been read past 2% 
@@ -43,6 +47,8 @@ The trigger % can be changed by the user as for above patch if desired in line 5
 **[2-stacked-folder-covers.lua](https://github.com/koboprincess/KOReader-Patches-/blob/main/2-stacked-rounded-folder-covers.lua)**
 
 Modification of SeriousHornet's 2-rounded-folder-covers.lua to include a 'stack' effect by drawing 3 lines above the folder cover
+
+<img width="354" height="553" alt="image" src="https://github.com/user-attachments/assets/354f66d7-5d30-4cb6-b3ad-e01cdc110fc2" />
 
 _***Make sure to download the rounded corner svg files from the icons folder and add to your icons folder**_
 
@@ -72,5 +78,9 @@ The lines, spacing etc. can be modified in the section from line 420 in the lua 
 
 _*The lines are currently set with widths that work with my 2 x 3 mosaic layout, the line sizes will need to be modified for other layouts_
 
+**[Icons](https://github.com/koboprincess/KOReader-Patches-/tree/main/Icons)**
 
+<img width="820" height="80" alt="image" src="https://github.com/user-attachments/assets/abc7757b-2ca8-40a9-a5cf-1329ef473abc" />
+
+These icons are all in the icons folder - just save them into your icons folder in KOReader :) 
  

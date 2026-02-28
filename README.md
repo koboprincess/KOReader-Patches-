@@ -28,6 +28,8 @@ To generate the page count, the book needs to be opened at least once and KORead
 
 Modification of SeriousHornet's 2-percent-badge.lua to include a trigger that only allows the percent badge to appear on the book cover when it has been read past 2% 
 
+_***Make sure to download the precent.badge svg file from the icons folder and add to your icons folder**_
+
 The trigger % can be changed by the user if desired in line 42 of the lua file: 
 >         if self.is_directory or self.status == "complete" or not self.percent_finished or (self.percent_finished * 100 < 2)
 

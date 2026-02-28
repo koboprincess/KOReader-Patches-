@@ -1,5 +1,5 @@
 --[[ User patch for KOReader to add custom rounded progress bar ]]
---
+-- modified to disable generation until book has been read past 2% 
 
 local userpatch = require("userpatch")
 local Screen = require("device").screen
@@ -49,7 +49,7 @@ local function patchCustomProgress(plugin)
 
         -- Use the real percent
         local pf = self.percent_finished
-        if not target or not target.dimen or not pf or (pf * 100 < 6) then
+        if not target or not target.dimen or not pf or (pf * 100 < 2) then
             return
         end
 

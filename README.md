@@ -87,10 +87,13 @@ _*The lines are currently set with widths that work with my 2 x 3 mosaic layout,
 These icons are all in the icons folder - just save them into your icons folder in KOReader :) 
 
 **[2-book-cover-navbar.lua](https://github.com/koboprincess/KOReader-Patches-/blob/90badeb01b1b8e155968cdb083c49b56b83c091f/2-book-cover-navbar.lua)**
+
 _*not compatible with Project:Title_
 
 Thanks to qewer33 whose navigation bar patch gave me the idea to modify it into a Kindle-esque one as I love the idea of being able to display my most recent read and click it to get back to it!
 
-Patch uses the book cover from the sdr file - it will only work if you have custom book covers set, otherwise the covers are hardcoded and don't exist as separate files in the metadata - covers must be .png 
+Patch uses the book cover from the sdr file - it will only work if you have custom book covers set, otherwise the covers are hardcoded and don't exist as separate files in the metadata so the patch won't 'see' them - covers must be .png 
+
+Certain parameters may need to be adjusted for different screen sizes, currently optimised for my Kobo Clara Colour
  
  

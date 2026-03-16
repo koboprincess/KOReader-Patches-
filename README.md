@@ -1,5 +1,5 @@
 # KOReader-Patches-
-KOReader Patches I modified from existing ones I use aswell as a new one I made for page counts using sdr data based on SeriousHornet's page count badge style 
+KOReader Patches I modified from existing ones I use aswell as a new one I made for page counts using sdr data based on SeriousHornet's page count badge style & one inspired by qewer33's navigation bar 
 
 _Verified to work with KOReader v2025.10 and Project: Title_
 
@@ -85,4 +85,13 @@ _*The lines are currently set with widths that work with my 2 x 3 mosaic layout,
 <img width="820" height="80" alt="image" src="https://github.com/user-attachments/assets/abc7757b-2ca8-40a9-a5cf-1329ef473abc" />
 
 These icons are all in the icons folder - just save them into your icons folder in KOReader :) 
+
+**[2-book-cover-navbar.lua](https://github.com/koboprincess/KOReader-Patches-/blob/90badeb01b1b8e155968cdb083c49b56b83c091f/2-book-cover-navbar.lua)**
+
+
+
+Thanks to qewer33 whose navigation bar patch gave me the idea to modify it into a Kindle-esque one as I love the idea of being able to display my most recent read and click it to get back to it!
+
+Patch uses the book cover from the sdr file - it will only work if you have custom book covers set, otherwise the covers are hardcoded and don't exist as separate files in the metadata
+ 
  

@@ -104,5 +104,19 @@ The patch uses the book cover from the sdr folder - it will only work if you hav
 
 
 Certain parameters may need to be adjusted for different screen sizes, currently optimised for Kobo Clara Colour
+
+**[2-highlight-menu-modifications-edit.lua]**(https://github.com/koboprincess/KOReader-Patches-/blob/1e93156d105b54c08e8335833340a317cec5168f/2-highlight-menu-modifications-edit.lua)  
+
+![Alt text] (https://github.com/koboprincess/KOReader-Patches-/blob/0715e8f1af4b21c57696ef5801a48329c1fb841c/Images/Reader_Room%20For%20Rent%20-%20Noelle%20W.%20Ihli.kepub.epub_p58_2026-03-18_161120.png)
+
+
+
+
+
+
+
+
+
+
  
  

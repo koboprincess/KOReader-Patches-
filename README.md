@@ -118,7 +118,7 @@ Certain parameters may need to be adjusted for different screen sizes, currently
 My edit of Veebui's/erildt's highlight menu patch - make sure to save the icons from my icons folder and add to your icons folder in Koreader
 
 
-**_* important! If you want a single row bar like in the above picture, you need to edit line 1511 in readerhighlight.lua to change 'local columns' to 8_**
+_***important! If you want a single row bar like in the above picture, you need to edit line 1511 in readerhighlight.lua to change 'local columns' to 8**_
 
 
 

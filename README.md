@@ -109,6 +109,7 @@ Certain parameters may need to be adjusted for different screen sizes, currently
 <img width="1072" height="1448" alt="image" src="https://github.com/user-attachments/assets/bca5e87b-5f68-42d5-8586-f60aec6da5e5" />
 
 
+
 **[2-highlight-menu-modifications-edit.lua](https://github.com/koboprincess/KOReader-Patches-/blob/1e93156d105b54c08e8335833340a317cec5168f/2-highlight-menu-modifications-edit.lua)**  
 
 <img width="1072" height="1448" alt="image" src="https://github.com/user-attachments/assets/132c8992-b7da-442f-b69f-ae8b83456020" />
@@ -117,7 +118,7 @@ Certain parameters may need to be adjusted for different screen sizes, currently
 My edit of Veebui's/erildt's highlight menu patch - make sure to save the icons from my icons folder and add to your icons folder in Koreader
 
 
-* important! If you want a single row bar like in the above picture, you need to edit line 1511 in readerhighlight.lua to change 'local columns' to 8
+**_* important! If you want a single row bar like in the above picture, you need to edit line 1511 in readerhighlight.lua to change 'local columns' to 8_**
 
 
 

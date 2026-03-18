@@ -222,9 +222,28 @@ local function createTabWidget(tab, tab_w, is_active)
             local last_file = G_reader_settings:readSetting("lastfile")
             local cover_path = nil
             if last_file then
-                local paths = { last_file .. ".sdr/cover.png", last_file:gsub("%.epub$", "") .. ".sdr/cover.png" }
-                for _, p in ipairs(paths) do
-                    if lfs.attributes(p, "mode") == "file" then cover_path = p; break end
+                -- 1. Identify the two possible SDR folder naming conventions
+                local sdr_with_ext = last_file .. ".sdr/"
+                local sdr_no_ext = last_file:gsub("%.%w+$", "") .. ".sdr/"
+
+                -- 2. Define the priority list of filenames KOReader uses
+                local possible_files = {
+                    "metadata.epub.jpg", -- Standard KOReader EPUB cache
+                    "cover.png",        -- Common for Kepubs/Custom
+                    "cover.jpg",        -- Generic fallback
+                    "metadata.jpg",     -- Generic fallback
+                }
+
+                -- 3. Loop through both folder types and all possible filenames
+                for _, folder in ipairs({sdr_with_ext, sdr_no_ext}) do
+                    for _, name in ipairs(possible_files) do
+                        local full_path = folder .. name
+                        if lfs.attributes(full_path, "mode") == "file" then
+                            cover_path = full_path
+                            break
+                        end
+                    end
+                    if cover_path then break end
                 end
             end
 
@@ -294,7 +313,7 @@ local function createTabWidget(tab, tab_w, is_active)
         local Widget = require("ui/widget/widget")
         
         -- This is your Master Width. Change 100 to your preferred size.
-        local fixed_width = Screen:scaleBySize(300) 
+        local fixed_width = Screen:scaleBySize(295) 
         
         -- We define the widget and the paint logic using that SAME width
         underline = Widget:new{ dimen = Geom:new{ w = fixed_width, h = underline_thickness } }
@@ -349,7 +368,7 @@ local function createNavBar()
     
     -- === WIDTH ADJUSTMENT ===
     -- Increase this to add more space around the cover, decrease to make it tighter.
-    local continue_tab_extra = Screen:scaleBySize(20) 
+    local continue_tab_extra = Screen:scaleBySize(10) 
     local continue_w = math.floor(navbar_icon_size * 2.5 * 3 / 4) + continue_tab_extra
     
     -- Calculate remaining space for other tabs

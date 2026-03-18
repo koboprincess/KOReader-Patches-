@@ -100,7 +100,7 @@ _*not compatible with Project:Title_
 Thanks to qewer33 whose navigation bar patch gave me the idea to modify it into a Kindle-esque one as I love the idea of being able to display my most recent read and click it to get back to it!
 
 
-The patch uses the book cover from the sdr folder - it will only work if you have custom book covers set, otherwise the covers are hardcoded and don't exist as separate files in the metadata so the patch won't 'see' them - covers must be .png 
+The patch uses the book cover from the sdr folder - it will only work if you have custom book covers set, otherwise the covers are hardcoded and don't exist as separate files in the metadata so the patch won't 'see' them - covers can be .jpg or .png
 
 
 Certain parameters may need to be adjusted for different screen sizes, currently optimised for Kobo Clara Colour
